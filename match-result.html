@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporary match result submission page for Efootball Dynasty League using a replaceable Google Form placeholder.">
+  <title>Efootball Dynasty League | Submit Match Result</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="match-result">
+  <div id="site-header"></div>
+
+  <main class="page-shell">
+    <section class="hero hero-subpage">
+      <div class="container hero-simple">
+        <span class="eyebrow">Submit Match Result</span>
+        <h1>Public result intake now, live league data later</h1>
+        <p class="hero-text">
+          Managers can use a placeholder form flow for result submission until a real authenticated result system is connected.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-layout">
+        <div>
+          <div class="section-heading">
+            <span class="eyebrow">What to include</span>
+            <h2>Temporary result submission checklist</h2>
+            <p>Make the manual process clear now so it can later become a proper manager action in Firebase or Supabase.</p>
+          </div>
+          <div class="card-grid compact-grid">
+            <article class="surface-card feature-card">
+              <h3>Fixture details</h3>
+              <p>Manager names, club names, match week, and the final scoreline.</p>
+            </article>
+            <article class="surface-card feature-card">
+              <h3>Supporting proof</h3>
+              <p>Add screenshots or notes where required while the process remains manual.</p>
+            </article>
+            <article class="surface-card feature-card">
+              <h3>Future upgrade</h3>
+              <p>Later, results can write directly into a protected database and update tables automatically.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="surface-card form-card">
+          <div class="pill pill-warning">Google Forms placeholder</div>
+          <h2>Open match result form</h2>
+          <p>Use the shared placeholder today and replace it in one config file later.</p>
+          <a class="button button-primary" data-form-link="matchResult" href="#">Open Match Result Form</a>
+          <div class="code-note">
+            <span>Current placeholder</span>
+            <code id="match-result-link-display">#match-result-form-link</code>
+          </div>
+          <div class="inline-notice">
+            <strong>Important:</strong> the admin dashboard only previews submitted results with mock data. It does not receive real form submissions yet.
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
