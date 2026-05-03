@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporary complaint submission page for Efootball Dynasty League using a replaceable Google Form placeholder.">
+  <title>Efootball Dynasty League | Submit Complaint</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="complaint">
+  <div id="site-header"></div>
+
+  <main class="page-shell">
+    <section class="hero hero-subpage">
+      <div class="container hero-simple">
+        <span class="eyebrow">Submit Complaint</span>
+        <h1>A public intake page without fake private tooling</h1>
+        <p class="hero-text">
+          Complaints can be submitted through a temporary placeholder form now. Complaint status tracking inside the site remains a future database feature.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-layout">
+        <div>
+          <div class="section-heading">
+            <span class="eyebrow">Complaint Flow</span>
+            <h2>How the temporary process works</h2>
+            <p>This keeps the policy clear now without pretending there is already a private inbox or secure case management system.</p>
+          </div>
+          <div class="timeline-list">
+            <article class="surface-card timeline-card">
+              <h3>1. Submit the complaint</h3>
+              <p>Managers send match details, evidence, and a short summary using the temporary form link.</p>
+            </article>
+            <article class="surface-card timeline-card">
+              <h3>2. Admin review happens outside the site</h3>
+              <p>Admins manually inspect the submission until a real back-office workflow is connected.</p>
+            </article>
+            <article class="surface-card timeline-card">
+              <h3>3. Future upgrade path</h3>
+              <p>Later, complaint status, comments, and resolutions can move into Firebase or Supabase tables.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="surface-card form-card">
+          <div class="pill pill-warning">Google Forms placeholder</div>
+          <h2>Open complaint form</h2>
+          <p>Keep the button here, then swap the shared placeholder for the real Google Form URL later.</p>
+          <a class="button button-primary" data-form-link="complaint" href="#">Open Complaint Form</a>
+          <div class="code-note">
+            <span>Current placeholder</span>
+            <code id="complaint-link-display">#complaint-form-link</code>
+          </div>
+          <div class="inline-notice">
+            <strong>Important:</strong> complaint status on the manager dashboard is a visual placeholder only until a database is added.
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporary manager registration page for Efootball Dynasty League using a replaceable Google Form placeholder.">
+  <title>Efootball Dynasty League | Register Manager</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="register">
+  <div id="site-header"></div>
+
+  <main class="page-shell">
+    <section class="hero hero-subpage">
+      <div class="container hero-simple">
+        <span class="eyebrow">Register Manager</span>
+        <h1>Simple now, expandable later</h1>
+        <p class="hero-text">
+          This page gives you a clean public registration entry point today while keeping the code ready for a real member system later.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-layout">
+        <div>
+          <div class="section-heading">
+            <span class="eyebrow">Process</span>
+            <h2>What the temporary registration flow covers</h2>
+            <p>Use a Google Form for onboarding now, then upgrade to protected accounts and manager records later.</p>
+          </div>
+          <div class="card-grid compact-grid">
+            <article class="surface-card feature-card">
+              <h3>Basic signup</h3>
+              <p>Collect manager name, club name, email, contact info, and platform details.</p>
+            </article>
+            <article class="surface-card feature-card">
+              <h3>Manual review</h3>
+              <p>Admins can review submitted forms outside the site until a real database workflow is added.</p>
+            </article>
+            <article class="surface-card feature-card">
+              <h3>Future upgrade</h3>
+              <p>Later, replace the form with secure account creation and an admin approval process.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="surface-card form-card">
+          <div class="pill pill-warning">Google Forms placeholder</div>
+          <h2>Open manager registration</h2>
+          <p>Replace the shared placeholder below when your real Google Form is ready.</p>
+          <a class="button button-primary" data-form-link="registration" href="#">Open Registration Form</a>
+          <div class="code-note">
+            <span>Current placeholder</span>
+            <code id="register-page-link-display">#registration-form-link</code>
+          </div>
+          <div class="inline-notice">
+            <strong>Important:</strong> this page does not create real accounts yet. Real login and manager approvals will need Firebase or Supabase.
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

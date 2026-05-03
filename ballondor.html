@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ballon d'Or voting page for Efootball Dynasty League with temporary Google Form placeholders and future database notes.">
+  <title>Efootball Dynasty League | Ballon d'Or Voting</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="ballondor">
+  <div id="site-header"></div>
+
+  <main class="page-shell">
+    <section class="hero hero-subpage">
+      <div class="container hero-simple">
+        <span class="eyebrow">Ballon d'Or Voting</span>
+        <h1>Show nominees now, connect real voting later</h1>
+        <p class="hero-text">
+          Voting currently uses a temporary placeholder link so the public flow is ready before real user accounts and saved votes exist.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split-layout">
+          <div>
+            <div class="section-heading">
+              <span class="eyebrow">Nominees</span>
+              <h2>Current shortlist preview</h2>
+              <p>Nominee cards are loaded from shared mock data and can later come from a database-controlled admin workflow.</p>
+            </div>
+            <div class="card-grid" id="nominee-grid"></div>
+          </div>
+          <aside class="surface-card form-card">
+            <div class="pill pill-warning">Temporary workflow</div>
+            <h2>Vote using the placeholder link</h2>
+            <p>
+              Replace the current placeholder in the shared form config when your Google Form is ready.
+              Until then, this button stays visibly temporary.
+            </p>
+            <a class="button button-primary" data-form-link="ballondor" href="#">Open Ballon d'Or Form</a>
+            <div class="code-note">
+              <span>Current placeholder</span>
+              <code id="ballondor-link-display">#ballondor-form-link</code>
+            </div>
+            <div class="inline-notice">
+              <strong>Later:</strong> connect this page to Firebase or Supabase for secure login, one-person-one-vote logic, and saved results.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

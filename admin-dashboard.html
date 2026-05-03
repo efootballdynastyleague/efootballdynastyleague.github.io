@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo-only admin dashboard UI for Efootball Dynasty League.">
+  <title>Efootball Dynasty League | Admin Dashboard Demo</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="admin-dashboard">
+  <div id="site-header"></div>
+
+  <main class="page-shell">
+    <section class="hero hero-dashboard">
+      <div class="container hero-simple">
+        <span class="eyebrow">Admin Dashboard Demo</span>
+        <h1>League controls preview</h1>
+        <p class="hero-text">
+          This page shows the future admin experience only. It is not protected and does not grant real permissions yet.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="dashboard-access-message"></div>
+        <div class="banner banner-danger">
+          <strong>Not secure:</strong> This dashboard is a front-end demo only. Real admin authentication,
+          manager permissions, and database-backed actions must be connected later.
+        </div>
+
+        <div class="stat-grid" id="admin-metrics"></div>
+
+        <div class="dashboard-grid">
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Post league news</h2>
+              <p>Demo form for a future admin news workflow.</p>
+            </div>
+            <form class="demo-form" data-demo-submit="news">
+              <label>
+                Headline
+                <input type="text" name="headline" placeholder="Season update" required>
+              </label>
+              <label>
+                Summary
+                <textarea name="summary" rows="4" placeholder="Short announcement for the league" required></textarea>
+              </label>
+              <button class="button button-primary" type="submit">Save Demo Draft</button>
+            </form>
+          </section>
+
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Edit league rules</h2>
+              <p>Demo editor only. No real changes are saved yet.</p>
+            </div>
+            <form class="demo-form" data-demo-submit="rules">
+              <label>
+                Rule update
+                <textarea name="rules" rows="6" placeholder="Example: Results must be submitted within 24 hours." required></textarea>
+              </label>
+              <button class="button button-primary" type="submit">Save Demo Rules Update</button>
+            </form>
+          </section>
+
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Add tournament results</h2>
+              <p>Preview how admins could publish competition history later.</p>
+            </div>
+            <form class="demo-form" data-demo-submit="record">
+              <label>
+                Tournament
+                <input type="text" name="tournament" placeholder="Dynasty Cup" required>
+              </label>
+              <label>
+                Winner
+                <input type="text" name="winner" placeholder="Winning manager" required>
+              </label>
+              <button class="button button-primary" type="submit">Add Demo Result</button>
+            </form>
+          </section>
+
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Add Ballon d'Or nominees</h2>
+              <p>Future admin entry point for nominee management.</p>
+            </div>
+            <form class="demo-form" data-demo-submit="nominee">
+              <label>
+                Player name
+                <input type="text" name="player" placeholder="Player name" required>
+              </label>
+              <label>
+                Club
+                <input type="text" name="club" placeholder="Club name" required>
+              </label>
+              <button class="button button-primary" type="submit">Add Demo Nominee</button>
+            </form>
+          </section>
+
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Open and close voting</h2>
+              <p>Front-end toggle only for the future voting control panel.</p>
+            </div>
+            <div class="stack-gap">
+              <div class="status-card">
+                <span class="status-label">Current demo status</span>
+                <strong id="voting-status-label">Voting open</strong>
+              </div>
+              <button class="button button-secondary" type="button" id="toggle-voting-button">Toggle Demo Voting State</button>
+            </div>
+          </section>
+
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Manage managers</h2>
+              <p>Public preview table with example manager actions.</p>
+            </div>
+            <div class="table-wrap compact-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Manager</th>
+                    <th>Club</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-managers-table-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="surface-card dashboard-panel dashboard-panel-wide">
+            <div class="panel-heading">
+              <h2>View complaints</h2>
+              <p>Mock complaint data only. No private inbox or case history is stored yet.</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Case</th>
+                    <th>Manager</th>
+                    <th>Issue</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="complaints-table-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="surface-card dashboard-panel dashboard-panel-wide">
+            <div class="panel-heading">
+              <h2>View submitted match results</h2>
+              <p>Preview-only table using mock data until a real result pipeline is connected.</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Fixture</th>
+                    <th>Score</th>
+                    <th>Submitted by</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="match-results-table-body"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
