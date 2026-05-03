@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo-only manager dashboard UI for Efootball Dynasty League.">
+  <title>Efootball Dynasty League | Manager Dashboard Demo</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="manager-dashboard">
+  <div id="site-header"></div>
+
+  <main class="page-shell">
+    <section class="hero hero-dashboard">
+      <div class="container hero-simple">
+        <span class="eyebrow">Manager Dashboard Demo</span>
+        <h1>Manager tools preview</h1>
+        <p class="hero-text">
+          This page previews the future manager experience while staying honest that no secure manager account system exists yet.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="dashboard-access-message"></div>
+        <div class="banner banner-danger">
+          <strong>Demo only:</strong> This dashboard does not prove identity or protect private data.
+          Real manager permissions and saved actions will require Firebase or Supabase later.
+        </div>
+
+        <div class="stat-grid" id="manager-metrics"></div>
+
+        <div class="dashboard-grid">
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Vote for Ballon d'Or</h2>
+              <p>Temporary public form flow until secure voting is added.</p>
+            </div>
+            <a class="button button-primary" data-form-link="ballondor" href="#">Open Voting Form</a>
+          </section>
+
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Submit complaint</h2>
+              <p>Temporary intake route while case management remains manual.</p>
+            </div>
+            <a class="button button-primary" data-form-link="complaint" href="#">Open Complaint Form</a>
+          </section>
+
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>Submit match result</h2>
+              <p>Temporary result submission button powered by the shared placeholder link.</p>
+            </div>
+            <a class="button button-primary" data-form-link="matchResult" href="#">Open Match Result Form</a>
+          </section>
+
+          <section class="surface-card dashboard-panel">
+            <div class="panel-heading">
+              <h2>View league news</h2>
+              <p>Quick access to the latest public announcements.</p>
+            </div>
+            <div class="mini-feed" id="manager-news-preview"></div>
+          </section>
+
+          <section class="surface-card dashboard-panel dashboard-panel-wide">
+            <div class="panel-heading">
+              <h2>View complaint status placeholder</h2>
+              <p>Visual placeholder only. These statuses are not tied to real complaint submissions yet.</p>
+            </div>
+            <div class="status-grid" id="complaint-status-grid"></div>
+          </section>
+
+          <section class="surface-card dashboard-panel dashboard-panel-wide">
+            <div class="panel-heading">
+              <h2>View fixtures and results</h2>
+              <p>Mock schedule preview until real result sync and table updates are added.</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Fixture</th>
+                    <th>Match Week</th>
+                    <th>Status</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody id="fixtures-table-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="surface-card dashboard-panel dashboard-panel-wide">
+            <div class="panel-heading">
+              <h2>View league rules</h2>
+              <p>Public rule summaries remain visible here for convenience.</p>
+            </div>
+            <div class="mini-rule-grid" id="manager-rules-preview"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
