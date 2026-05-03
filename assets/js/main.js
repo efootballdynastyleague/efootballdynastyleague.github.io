@@ -145,6 +145,15 @@ function routePage() {
     case "managers":
       renderManagersPage();
       break;
+    case "register":
+      renderStaticFormPage();
+      break;
+    case "complaint":
+      renderStaticFormPage();
+      break;
+    case "match-result":
+      renderStaticFormPage();
+      break;
     case "login":
       renderLoginPage();
       break;
@@ -157,6 +166,10 @@ function routePage() {
     default:
       break;
   }
+}
+
+function renderStaticFormPage() {
+  // These pages only need the shared header/footer and centralized form-link wiring for now.
 }
 
 function renderHomePage() {
